@@ -1,0 +1,77 @@
+Version 1.1 was the first board released to beta users, sold at Maker Faire '09. 
+Note that some v1.1s had a different CPU (46J50) than intended and had the door 
+of the Schmalz Haus logo painted white.
+
+Changes from v1.1 to v1.2:
+1) Bring PWR IN out to .1" header somewhere
+2) 1 (or 2) RC servo connectors, using RB1 and RB2 as data lines ans PWR_IN as power.
+3) Route with smaller vias and 8/8 rules, try to make more room
+4) Connect J8 & J10 in copper so no hand solder on back is necessary
+5) Remove STEP LEDs. They just can't be seen.
+6) Remove SLEEP_1 and _2, as we really don't need them. Just use ENABLE instead.
+7) Remove solenoid driver, and it's I/O point.
+8) Change to surface mount POT (use same as on Easy Driver v4.1)
+9) Change to surface mount power in barrel jack connector
+
+Changes from v1.2 to v1.3:
+1) Put all step/dir pins on one port (Port D probably) to make ISR code easier
+2) Move C6 away from power connector
+3) Move PRG button away from headers on left hand side of board
+4) Allow for automatic power switching for 3.3V between USB and power jack
+5) Remove fixed resistor in VREF circuit
+6) Fix problem with R4/R1
+7) Add pull-up/pull-downs on enable or sleep of drivers during bootloading
+8) Add analog input of current power jack voltage monitoring
+
+Changes from v1.3 to v1.4:
+1) Could we pull all step/dir/enable lines out to a header so alt I/O not needed?
+2) Add footprint for alternate motor connector
+3) Remove solenoid driver?
+4) Add little 2.5 V ref on back side for using 18LF parts (use TC1014-2.5VCT713CT-ND + 1uF cap + 470pf)
+5) Check out switching supply bypass 1uFs to electrolytic or tantalum?
+
+Changes from v1.4 to v1.5
+
+Changes from v1.5 to v1.6
+1) Fix version number silk on front
+2) Change V+ to 5V silk on front and back on I/O header
+3) Label each I/O connector (instead of just pin 1 indicator)
+
+Changes from v1.6 to v1.7
+1) Fixed more silk screen errors - V+ went to 5V, version number
+
+Changes from v1.5 to v2.0 (version 2.0 is based on v1.5)
+1) Changed D1 to a 3A, 40V Diode, changed footprint to a DO-214AC, SMA.
+2) Made silk screen changes from v1.6 and v1.7.
+
+(06/10/2010) Still at v2.0
+1) Removed silk from QFN (motor driver) pads
+
+(10/20/2010) Changes from v2.0 to v2.1
+1) Moved R16 to avoid being caught under screw heads.
+2) Updated J1 and J2 footprints with 0.054"
+
+(10/27/2010) Still at v2.1 - Released to SparkFun on 10/27
+1) Started with current SparkFun board
+2) Moved R16 again
+3) Re-did J1/J2 footprint - now with bigger holes and locking
+4) Added more vias under driver chips
+
+(11/22/2010) Still at v2.1 - SparkFun internal change
+1) Changed R17 from 47K to 68K. This provides a higher voltage to the PIC's input pin, which needs at least 2.6V to register as HIGH. Does not appear that any users were having EBBs that failed to detect USB, but the problem needed to be corrected anyway.
+
+(08/20/2011) v2.2
+1) Removed VCC pour underneath one screw (by power connector) and replaced with ground pour. No more shorts with metal screws
+2) Rotated all silk as per EggBot mounting location (with power jack on right hand side of EBB)
+3) Replaced directional arrow for Current Adjust pot, replaced with big CURRENT ADJ text and pointer arrow
+4) Made most silk text .04" high, fixed placement of silk text for extra IO pins
+5) Increased copper areas for pads of USB and power connectors to help prevent them from tearing off the board
+6) Rounded the corners of the board slightly
+7) Add a big EBB text on silk layer
+8) Added Open Source Hardware logo
+9) Adjusted current adjustment pot text in schematic
+
+(09/09/2013) v2.3
+1) Reverted orientation of silk so that v2.3 would work equally as bad for Water Color Bot and EggBot
+2) Updated placement and footprints of diodes near power input to match what SparkFun is using
+3) Updated BOM so that part footprints exactly match BOM contents
