@@ -39023,8 +39023,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD"/>
 <part name="S2" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="SMD"/>
 <part name="D9" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-B340A" value="B340A"/>
-<part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-PMEG4005EJ" value="PMEG4005EJ"/>
-<part name="D10" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-PMEG4005EJ" value="PMEG4005EJ"/>
+<part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-MBRA140" value="MBRA140"/>
+<part name="D10" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-MBRA140" value="MBRA140"/>
 <part name="P+7" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="P+8" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="P+13" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
