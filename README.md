@@ -11,6 +11,7 @@ It is based on the UBW board and supports all of the commands that the UBW does 
 Repository Contents
 -------------------
 * **/Hardware** - All Eagle design files (.brd, .sch)
+* **/Production** - Production panel files (.brd)
 
 License Information
 -------------------
